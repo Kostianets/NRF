@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Saved models (NRF.save)
+*.pt
+*.pth
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+.claude/

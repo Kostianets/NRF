@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying thesis."
+title: "Neural Random Forest (NRF)"
+type: software
+authors:
+  - given-names: Oleksandr
+    family-names: Kostianets
+license: MIT
+repository-code: "https://github.com/REPLACE_WITH_GITHUB_USER/NRF"
+preferred-citation:
+  type: thesis
+  title: "Neural Random Forest for Classification Tasks"
+  authors:
+    - given-names: Oleksandr
+      family-names: Kostianets
+  year: 2026
+  thesis-type: "Bachelor's thesis"
+  institution:
+    name: "Technical University of Košice"
