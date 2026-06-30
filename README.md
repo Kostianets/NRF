@@ -6,10 +6,7 @@ sigmoid gates, predicts with a small per-leaf network, and the ensemble combines
 trees by out-of-bag–weighted voting. It targets supervised binary and multiclass
 problems on any fixed-length numeric feature vectors.
 
-This repository accompanies a bachelor thesis. The implementation draws on
-several lines of work — adaptive neural trees (ANT), deep neural decision forests
-(Deep NDF), the original Neural Random Forest (NRF), and deep neural decision
-trees (DNDT); the per-component lineage is annotated in `src/model.py`.
+This repository accompanies a bachelor thesis. The implementation draws on several lines of work — adaptive neural trees (ANT), deep neural decision forests (Deep NDF), deep neural decision trees (DNDT) and the original Neural Random Forest (NNRF); the per-component lineage is annotated in `src/model.py`.
 
 ## Repository structure
 
@@ -69,7 +66,7 @@ see the `NRF` constructor in `src/model.py` for the full list.
 
 - The global seed is `SEED = 42` in `src/model.py`.
 - Per-tree randomness (bootstrap, feature subsets, input noise) is seeded
-  deterministically so single-GPU runs reproduce against the seed.
+deterministically so single-GPU runs reproduce against the seed.
 
 ## Acknowledgments
 
@@ -79,7 +76,7 @@ the supervision of **Ing. Martina Szabóová, PhD**.
 ## Citation
 
 If you use this work, please cite the accompanying thesis. A ready-to-use BibTeX
-entry is in [`CITATION.bib`](CITATION.bib), and [`CITATION.cff`](CITATION.cff)
+entry is in `[CITATION.bib](CITATION.bib)`, and `[CITATION.cff](CITATION.cff)`
 powers GitHub's "Cite this repository" button.
 
 ```bibtex

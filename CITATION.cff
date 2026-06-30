@@ -6,7 +6,7 @@ authors:
   - given-names: Oleksandr
     family-names: Kostianets
 license: MIT
-repository-code: "https://github.com/REPLACE_WITH_GITHUB_USER/NRF"
+repository-code: "https://github.com/Kostianets/NRF"
 preferred-citation:
   type: thesis
   title: "Neural Random Forest for Classification Tasks"

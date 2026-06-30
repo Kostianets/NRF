@@ -29,7 +29,7 @@ class SoftNeuralTree(nn.Module):
     Components and origins:
       [ANT, Tanno 2019]        Shared MLP feature transformer (use_transformer=True)
       [Deep NDF, K. 2015]      Soft routing: sigmoid routers, mixture of leaf predictions
-      [NNRF, Wang 2017]        feature_indices: per-tree random feature subspace
+      [NNRF, Wang 2017]         feature_indices: per-tree random feature subspace
       [DNDT, Yang 2018 adapt]  temperature parameter: controls routing sharpness
       [Own]                    use_transformer / linear_routers flags for ablation
       [Own]  PERF              Batched routers/solvers via einsum — eliminates Python loops
@@ -550,9 +550,6 @@ class NRF:
         self.use_transformer = use_transformer
         self.linear_routers  = linear_routers
         self.rf_routing      = rf_routing
-        # [DEF-Q3] temp_schedule: 'linear' | 'exp' | 'const_end'
-        # [DEF-Q5] noise_mode: 'uniform' (σ_t ~ U[0, max_noise_std], canonical)
-        #          | 'fixed' (σ_t = max_noise_std, one shared value for all trees)
         self.temp_schedule   = temp_schedule
         self.noise_mode      = noise_mode
         self.trees_          = []
